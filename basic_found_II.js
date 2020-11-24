@@ -35,9 +35,9 @@ console.log(printlow([1,10,-7,0,55,3]));
 // 3. Print One, Return Another - Build a function that takes in an array of numbers.  The function should print the second-to-last value in the array, and return the first odd value in the array.
 
 function printanother(arr) {
-    console.log(arr[arr.length - 2]);
+    console.log(arr[arr.length - 2]); // print the second to last value of the array
     for (i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 == 1) {
+        if (arr[i] % 2 != 0) { // if dividing by two, and the remainder is not zero, that means it's an odd number
             return arr[i];
         }
     }
